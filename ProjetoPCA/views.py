@@ -10,10 +10,8 @@ def index(request):
             x = requests.get("https://viacep.com.br/ws/{}/json/".format(cep))
             printar = x.json()
         elif cep == "":
-            printar = {'chave': 'Error digite um cep valido'}
+            printar = {'chave': 'Digite um cep valido'}
 
     return render(request, 'index.html', {'printar': printar})
 
 
-def contato(request):
-    return render(request, 'contato.html')

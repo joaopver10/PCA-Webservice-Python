@@ -5,13 +5,14 @@
     <title>Pagina inicial</title>
 </head>
 <body>
+    <form method="get" autofocus>
+        <input name="cep" id="cep" placeholder="Digite um cep" type="number" style="width: 140px; height: 25px; border-radius: 5px" maxlength="8">
+        <p></p>
+        <button style="border-radius: 3px; width: 80px; height: 30px; margin-left: 30px"  onclick="pegaCep()" >Pesquisar</button>
+    </form>
+<p id="teste1" style="color: red; font-family: 'Roboto', 'Lucida Grande', Verdana, Arial, sans-serif ">{{printar.chave}}</p>
 
-<form method="get">
-    <input name="cep" id="cep" placeholder="Digite um cep sem espaços" type="number">
-    <button onclick="pegaCep()" >Pesquisar cep</button>
-</form>
 
-<p id="teste1" >{{printar.chave}}</p>
 <p id="teste" >{{printar.uf}}</p>
 
 <p id="mostra"></p>
