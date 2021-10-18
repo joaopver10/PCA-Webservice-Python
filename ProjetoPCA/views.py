@@ -15,3 +15,9 @@ def index(request):
     return render(request, 'index.html', {'printar': printar})
 
 
+def jogo(request):
+    return render(request, 'jogo.html')
+
+
+def sobre(request):
+    return render(request, 'sobre.html')
