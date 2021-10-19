@@ -3,6 +3,10 @@ import requests
 
 
 def index(request):
+    return render(request, 'index.html')
+
+
+def jogo(request):
     printar = {}
     if 'cep' in request.GET:
         cep = request.GET['cep']
@@ -12,11 +16,7 @@ def index(request):
         elif cep == "":
             printar = {'chave': 'Digite um cep valido'}
 
-    return render(request, 'index.html', {'printar': printar})
-
-
-def jogo(request):
-    return render(request, 'jogo.html')
+    return render(request, 'jogo.html', {'printar': printar})
 
 
 def sobre(request):

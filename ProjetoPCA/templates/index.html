@@ -6,6 +6,7 @@
     <title>Pagina inicial</title>
     <link rel="stylesheet" href="{% static 'CSS/estilo.css' %}">
     <link href="{% static 'images/brain.png' %}" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <body>
@@ -25,23 +26,33 @@
     </nav>
 </header>
 
-<section>
+<h1>Uma nova maneira de aprender</h1>
+
+
+<section id="info-container">
+      <div id="imagem" >
+        <img src="{% static 'images/imagem.jpg' %}"/>
+    </div>
+       <div id="texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mauris eros. Orci varius natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus. Maecenas eleifend finibus lectus at gravida. Integer
+            bibendum elementum aliquet. Praesent leo ipsum, ultrices ac elit sed, aliquam rhoncus risus.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus accumsan
+            erat congue turpis consectetur venenatis. Nulla quis velit nec magna iaculis ornare et id ante.
+            Fusce tincidunt, augue id eleifend pretium, turpis turpis venenatis risus, quis tempus ipsum nulla
+            tempor augue. Vestibulum ac aliquam metus. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Pellentesque egestas gravida interdum. Aliquam erat volutpat.
+            Cras euismod nisi ut sem tincidunt congue.
+
+            Nam sed vestibulum purus. In hac habitasse platea dictumst. Sed porttitor elementum orci, id elementum
+            sapien. Sed nulla orci, maximus sit amet porttitor sit amet, auctor a arcu. Etiam viverra vestibulum ligula
+            pellentesque porttitor. Integer vitae velit semper, bibendum neque malesuada, sagittis dolor. Nam semper
+            ipsum non turpis ultricies hendrerit.
+        </p>
+    </div>
+
 
 </section>
-
-<!--
-    <form method="get" autofocus>
-        <input name="cep" id="cep" placeholder="Digite um cep" type="number" style="width: 140px; height: 25px; border-radius: 5px" maxlength="8">
-        <p></p>
-        <button style="border-radius: 3px; width: 80px; height: 30px; margin-left: 30px"  onclick="pegaCep()" >Pesquisar</button>
-    </form>
-<p id="teste1" style="color: red; font-family: 'Roboto', 'Lucida Grande', Verdana, Arial, sans-serif ">{{printar.chave}}</p>
-
-
-<p id="teste" >{{printar.uf}}</p>
-
-<p id="mostra"></p>
--->
 
 
 

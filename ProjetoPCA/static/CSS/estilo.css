@@ -1,15 +1,9 @@
 * {
 	margin: 0;
 	padding: 0;
-}
-html, body{
-    height: 100%;
+    box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-}
 
 a {
     text-decoration: none;
@@ -88,22 +82,50 @@ nav{
 .nav-list.active{
     transform: translateX(0);
 }
-section{
-    flex: 1;
-}
+
 
 footer{
-    flex-shrink: 0;
-    width: 100%;
+    display: flex;
     background: #23232e;
+    height: 100px;
+    align-items: center;
+}
+footer p{
+    flex: 1;
     text-align: center;
-    padding: 3% 0;
-    color: #fff;
-    font-size: 14px;
     font-family: Arial;
-
 }
 
+#info-container{
+    display: flex;
+    max-width: 960px;
+    flex-direction: row;
+    margin: 3% auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+h1{
+    border-bottom: 2px solid #121CD1 ;
+    text-align: center;
+    margin: 5% auto;
+    max-width: 960px;
+    padding-bottom: 5%;
+}
+
+#imagem{
+    display: block;
+    max-width: 100%;
+}
+
+#texto{
+    width: 550px;
+    font-family: Arial;
+}
+#texto p{
+    margin: 0 10px 10px 10px;
+}
 
 @keyframes navLinkFade {
     from{
