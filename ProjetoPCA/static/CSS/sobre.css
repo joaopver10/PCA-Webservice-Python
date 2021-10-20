@@ -1,0 +1,30 @@
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3% auto;
+    align-items: center;
+    max-width: 910px;
+
+}
+section p{
+    margin-top: 10px;
+    padding: 0 15px 15px 15px;
+}
+
+
+@media only screen and (max-width: 600px){
+    section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 5% auto;
+        align-items: center;
+        max-width: 800px;
+
+    }
+
+}

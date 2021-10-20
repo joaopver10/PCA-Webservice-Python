@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
+    font-family: Arial;
 }
 
 
@@ -93,7 +94,7 @@ footer{
 footer p{
     flex: 1;
     text-align: center;
-    font-family: Arial;
+    color: white;
 }
 
 #info-container{
@@ -106,12 +107,12 @@ footer p{
     align-items: center;
     padding-top: 10px;
 }
-h1{
+#sobre{
     border-bottom: 2px solid #121CD1 ;
     text-align: center;
-    margin: 5% auto;
+    margin: 3% auto;
     max-width: 960px;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 #imagem{
@@ -121,7 +122,6 @@ h1{
 
 #texto{
     width: 550px;
-    font-family: Arial;
 }
 #texto p{
     margin: 0 10px 10px 10px;
