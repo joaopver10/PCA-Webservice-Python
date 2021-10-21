@@ -5,7 +5,6 @@
     font-family: Arial;
 }
 
-
 header nav a {
     text-decoration: none;
     color: #fff;
@@ -122,7 +121,7 @@ footer p{
     align-items: center;
     padding-top: 10px;
 }
-#sobre{
+#sobre-index{
     border-bottom: 2px solid #121CD1 ;
     text-align: center;
     margin: 4% auto;
@@ -163,7 +162,7 @@ footer p{
 
 }
 
-@media only screen and (max-width: 999px){
+@media only screen and (max-width: 1024px){
     #info-container{
         display: flex;
         max-width: 960px;
@@ -171,7 +170,7 @@ footer p{
         align-content: center;
         padding-top: 10px;
         justify-content: center;
-
+        min-height: 71vh;
     }
     #texto{
         width: 960px;
@@ -181,7 +180,7 @@ footer p{
         font-size: 1.2em;
         padding: 20px;
         margin: 0;
-
+        line-height: 1.5
     }
     img{
         display: block;

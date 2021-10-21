@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import requests
+from .models import Estados
 
 
 def index(request):
@@ -8,15 +9,18 @@ def index(request):
 
 def jogo(request):
     printar = {}
-    if 'cep' in request.GET:
-        cep = request.GET['cep']
-        if cep != "":
+    try:
+        if 'cep' in request.GET:
+            cep = request.GET['cep']
             x = requests.get("https://viacep.com.br/ws/{}/json/".format(cep))
-            printar = x.json()
-        elif cep == "":
-            printar = {'chave': 'Digite um cep valido'}
+            cepJ = x.json()
+            estados = Estados.objects.filter(sigla=cepJ['uf'])
+            if estados:
+                printar = {'estados': estados}
+    except ValueError:
+        printar = {'erro': 'O cep digitado está errado ou ainda não temos a historia desse estado adicionado no nosso banco de dados.'}
 
-    return render(request, 'jogo.html', {'printar': printar})
+    return render(request, 'jogo.html', printar)
 
 
 def sobre(request):

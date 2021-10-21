@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>Jogo</title>
     <link rel="stylesheet" href="{% static 'CSS/estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/pageJogo.css' %}">
     <link href="{% static 'images/brain.png' %}" rel="shortcut icon" type="image/x-icon" />
+
+
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
@@ -19,31 +22,33 @@
         </div>
         <ul class="nav-list">
             <li><a href="{% url 'index' %}"> Inicio</a></li>
-            <li><a href="{% url 'jogo' %}"> Jogar</a></li>
+            <li><a href="{% url 'curiosidades' %}"> Curiosidades</a></li>
             <li><a href="{% url 'sobre' %}">Sobre</a> </li>
         </ul>
     </nav>
 </header>
 
-<section>
+<div id="sobre-jogo">
+    <h1>Curiosidades sobre os estados</h1>
+</div>
 
-    <!--
-    <form method="get" autofocus>
-        <input name="cep" id="cep" placeholder="Digite um cep" type="number" style="width: 140px; height: 25px; border-radius: 5px" maxlength="8">
-        <p></p>
-        <button style="border-radius: 3px; width: 80px; height: 30px; margin-left: 30px"  onclick="pegaCep()" >Pesquisar</button>
-    </form>
-<p id="teste1" style="color: red; font-family: 'Roboto', 'Lucida Grande', Verdana, Arial, sans-serif ">{{printar.chave}}</p>
+<section id="section-jogo">
+    <div id="formulario">
+        <p style="color: red;">{{erro}}</p>
+        <form method="get" autofocus>
+            <input name="cep" id="cep" placeholder="Digite um cep">
+            <button >Pesquisar</button>
+        </form>
+    </div>
 
-
-<p id="teste" >{{printar.uf}}</p>
-
-<p id="mostra"></p>
--->
-
+    <div id="texto-formulario">
+        {% for estado in estados %}
+             <p>{{estado.descricao}}</p>
+        {% endfor%}
+    </div>
 </section>
 
-<footer>
+<footer id="footer-jogo">
         <p>Copyright© 2021 EducaGame - Todos os direitos reservados</p>
 </footer>
 
