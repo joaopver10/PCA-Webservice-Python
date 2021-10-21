@@ -1,3 +1,4 @@
+/* Script do menu */
 class MobileNavbar{
     constructor(mobileMenu, navList, navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu);
@@ -42,3 +43,15 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+/* Fim script do menu*/
+
+function typeWriter(elemento){
+    const textoArray = elemento.innerHTML.split('')
+    elemento.innerHTML = ""
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => elemento.innerHTML += letra, 75 * i)
+    })
+}
+
+const titulo = document.querySelector('h1')
+typeWriter(titulo)

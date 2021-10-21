@@ -9,8 +9,19 @@ section{
 
 }
 section p{
-    margin-top: 10px;
-    padding: 0 15px 15px 15px;
+    padding: 10px;
+    cursor: default;
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+.icone a:hover{
+    opacity: 0.7;
 }
 
 
