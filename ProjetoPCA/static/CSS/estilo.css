@@ -127,6 +127,7 @@ footer p{
     margin: 4% auto;
     max-width: 960px;
     padding-bottom: 4%;
+     cursor: default;
 }
 
 #imagem{
@@ -136,6 +137,13 @@ footer p{
 
 #texto{
     width: 550px;
+}
+#texto a{
+    text-decoration: none;
+    color: black;
+}
+#texto p{
+     cursor: default;
 }
 
 

@@ -36,8 +36,16 @@
     <div id="formulario">
         <p style="color: red;">{{erro}}</p>
         <form method="get" autofocus>
-            <input name="cep" id="cep" placeholder="Digite um cep">
+            <input name="cep" id="cep" list="historico" placeholder="Escolha um cep" autocomplete="off" autofocus>
             <button >Pesquisar</button>
+
+            <datalist id="historico">
+                <option value="23580-430">RJ</option>
+                <option value="40020-315">BA</option>
+                <option value="78875-000">MT</option>
+                <option value="39853-000">MG</option>
+                <option value="01153-000">SP</option>
+            </datalist>
         </form>
     </div>
 
