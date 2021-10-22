@@ -1,0 +1,56 @@
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3% auto;
+    align-items: center;
+    max-width: 910px;
+
+}
+section p{
+    padding: 10px;
+    cursor: default;
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+.icone a:hover{
+    opacity: 0.7;
+}
+
+#sobre-sobre{
+    border-bottom: 2px solid #AB27EC ;
+    text-align: center;
+    margin: 4% auto;
+    max-width: 960px;
+    padding-bottom: 4%;
+     cursor: default;
+}
+
+
+@media only screen and (max-width: 1024px){
+    section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 3% auto;
+        align-items: center;
+        max-width: 800px;
+        min-height: 74vh;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    section{
+        flex-direction: column;
+    }
+
+}
